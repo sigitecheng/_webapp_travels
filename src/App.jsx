@@ -1,18 +1,22 @@
 // import { useState } from 'react'
 
-import Header from './components/Header/Header'
-import Home from './components/Home/Home'
-import Main from './components/Main/Main'
-import Footer from './components/Footer/Footer'
-
+import Navbar from './components/Navbar/Navbar'
+// import Header from './components/Header/Header'
+// import Home from './components/Home/Home'
+// import Mains from './components/Mains/Mains'
+// import Footer from './components/Footer/Footer'
+// import Icons from './components/icons'
 
 const App = () => {
   return(
     <>
-    <Header />  
-    <Home />  
-    <Main />  
-    <Footer />  
+    <Navbar />  
+    {/* <Header />   */}
+    {/* <Home />   */}
+    {/* <Mains />   */}
+    {/* <Footer />   */}
+    {/* <Icons />   */}
+
     </>
   )
 }

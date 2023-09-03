@@ -1,15 +1,15 @@
 // import React from 'react'
-import './header.css'
-// import {GiTeePipe} from 'react-icons/md'
+import './navbar.css'
+import {GiTeePipe} from 'react-icons/fa'
 
-const header = () => {
+const navbar = () => {
     return(
         <section className='navbarSection'> 
             <header className='header flex'>
 
                 <div className='logoDiv'>
                     <a href="#navbar" className='logo'>
-                    <h1>Travels</h1>
+                    <h1><GiTeePipe className='icon' /> Sigitmatika Air Solutions</h1>
                     </a>
                 </div>
 
@@ -19,7 +19,7 @@ const header = () => {
                         <a href="#" className='navlink'>Home</a>
                         </li>
                         <li className='navItem'> 
-                        <a href="#" className='navlink'>About</a>
+                        <a href="#" className='navlink'>Home</a>
                         </li>
                         <li className='navItem'> 
                         <a href="#" className='navlink'>Home</a>
@@ -35,4 +35,4 @@ const header = () => {
     )
 }
 
-export default header
+export default navbar 
