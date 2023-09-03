@@ -1,6 +1,6 @@
 // import React from 'react'
 import './navbar.css'
-import {GiTeePipe} from 'react-icons/fa'
+import { GiTeePipe } from 'react-icons/gi'
 
 const navbar = () => {
     return(
@@ -9,11 +9,12 @@ const navbar = () => {
 
                 <div className='logoDiv'>
                     <a href="#navbar" className='logo'>
-                    <h1><GiTeePipe className='icon' /> Sigitmatika Air Solutions</h1>
+                    <h1><GiTeePipe className='icon' />  Sigitmatika Air Solutions</h1>
+                    {/* <h1>Sigitmatika Air Solutions</h1> */}
                     </a>
                 </div>
 
-                <div className='navbar'>
+                {/* <div className='navbar'>
                     <ul className='navLists flex'>
                         <li className='navItem'> 
                         <a href="#" className='navlink'>Home</a>
@@ -28,7 +29,7 @@ const navbar = () => {
                         <a href="#" className='navlink'>Home</a>
                         </li>
                     </ul>
-                </div>
+                </div> */}
 
             </header>
         </section>
