@@ -1,16 +1,31 @@
-// import React from 'react'
-import './navbar.css'
-import { GiTeePipe } from 'react-icons/gi'
+// import {useState} from 'react'
+import {GiTeePipe } from 'react-icons/gi'
 import {AiFillCloseCircle} from 'react-icons/ai'
 import {PiDotsNineBold} from 'react-icons/pi'
-// import {CgLogIn} from 'react-icons/cg'
+import './navbar.css'
 
-const navbar = () => {
+export default function navBar(){
+    
+
+    // const [active, setActive] = useState('navBar');
+
+    
+    // function untuk togleNavbar 
+
+    // const showNav = () => {
+    //     setActive('navBar activeNavbar');
+    // }
+
+    // function untuk closeNavbar 
+    // const removeNabvar = () => {
+    //     setActive('navBar');
+    // }
+
     return(
-        <section className='navbarSection'> 
+        <section className='navBarSections'> 
             <header className='header flex'>
                 <div className='logoDiv'>
-                    <a href="#navbar" className='logo flex'>
+                    <a href="" className='logo flex'>
                     <h1><GiTeePipe className='icon' />  Travel</h1>
                     {/* <h1>Sigitmatika Air Solutions</h1> */}
                     </a>
@@ -49,20 +64,21 @@ const navbar = () => {
                         <button className='btn'>
                             <a href="#">LOGIN</a>
                         </button>
+
+                  <div className='closeNavbar'>
+                        <AiFillCloseCircle className='icon'/>
+                    </div>
                     </ul>
                 </div>
 
+        
+                <div className="toggleNavbar">
+                    <PiDotsNineBold className='icon'/>
+                </div>
 
-                <div className='navBar'>
-                        <AiFillCloseCircle className='icon'/>
-                    </div>
-
-                    <div className="togglenavbar">
-                        <PiDotsNineBold className='icon'/>
-                    </div>
+                 
             </header>
         </section>
     )
-}
 
-export default navbar 
+}
