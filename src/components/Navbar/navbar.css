@@ -12,49 +12,52 @@
   --cardBG: rgb(225, 225, 235);
 }
 
-.header {
+.navBarSections .Header {
   position: fixed;
   display: flex;
   align-items: center;
   justify-content: space-betweeen;
-  background: var(--whiteColorDeam);
+  background: var(--bodyColor)!important;
   width: 100%;
-  padding: 1rem;
-  z-index: 1000;
+  z-index: 2000;
   box-shadow: 0 2px 4px rgba(2, 15, 29, 0, 904);
 }
 
-.header .logoDiv {
-  color: var(--blackColor);
+.navBarSections .Header .logoDiv {
+  color: var(--SecondaryColor)!important;
   font-weight: 600;
   cursor: pointer;
   align-items: center;
   justify-content: center;
+  margin-bottom: 2rem;
 }
 
-.header .icon {
+.navBarSections .Header .logoDiv .icon {
   font-size: 25px;
   color: var(--PrimaryColor);
-  transform: translateY(5px);
+  margin-bottom: 0.25rem;
+  justify-content: space-betweeen;
 }
 
+
+/* ========================================== */
 @media screen and (max-width: 768px){
-  .navBar {
+.navBarSections .Header .navBar {
     position: absolute;
-    background: var(--whiteColorDeam);
+    background: var(--whiteColorDeam)!important;
     height: max-content;
     width: 80%;
-    border-radius: 1rem;
-    top: 7rem;
+    border-radius: 2rem;
+    top: -500rem;
     left: 50%;
-    padding: 1rem;
-    transform: translate(-50%);
-    z-index: 2000;
-    box-shadow: 0 2px 4px rgba(2, 15, 29, 0, 904);
-    transition: 0.3s ease-in-out;
+    padding: 1.5rem 1rem;
+    transform: translateX(-50%);
+    z-index: 1000;
+    box-shadow: 0 4px 4px rgba(2, 15, 29, 0, 904);
+    transition: 0.25s ease-in-out;
   }
-
-  .navlists {
+  
+.navBarSections .Header .navBar .navlists {
     flex-direction: column;
     justify-content: center;
     width: 100%;
@@ -62,53 +65,53 @@
     padding: 0.5rem 0;
   }
 
-  .navitem {
+.navBarSections .Header .navBar .navlists .navitem {
     padding: 0.5rem 0;
   }
 
-  .navitem .navlink {
-    color: var(--textColor);
-    font-size: 0.9rem;
-    font-weight: 600;
+.navBarSections .Header .navBar .navlists .navitem .navLink {
+    color: var(--textColor)!important;
+    font-size: 1rem;
+    font-weight: 800;
   }
 
-  .navitem .navlink:hover {
-    color: var(--PrimaryColor);
+.navBarSections .Header .navBar .navlists .navitem .navLink:hover {
+    color: var(--PrimaryColor)!important;
   }
 
-  .navlist .btn {
+.navBarSections .Header .navBar .navlists .btn {
     margin-top: 1rem;
-    margin-bottom: 2rem;
+    margin-bottom: 4rem;
   }
-  .navlist .btn a {
+.navBarSections .Header .navBar .navlists .btn a {
     font-weight: 600;
-    color: var(--whiteColor);
+    color: var(--whiteColor)!important;
   }
-  .navlist .closeNavbar {
+.navBarSections .Header .navBar .navlists .closeNavbar {
     position: absolute;
-    top: 1rem;
+    top: 0rem;
     right: 2rem;
-    color: var(--PrimaryColor);
-    /* &:hover {
-      color: var(--SecondaryColor);
-    } */
+    color: var(--blackColor)!important;
+    
   }
-  .closenavBar:hover {
-    color: var(--SecondaryColor);
+.navBarSections .Header .navBar .navlists .closeNavbar:hover {
+    color: var(--SecondaryColor)!important;
   }
 
-  .activenavBar {
-    top: 7rem;
+.navBarSections .Header .activeNavbar{
+    top: 5.75rem;
   }
 
-  .header .togglenavBar .icon {
-     {
-      font-size: 25px;
-      color: var(--PrimaryColor);
-    }
+.navBarSections .Header .toggleNavbar .icon {
+  font-size: 30px;
+  color: var(--PrimaryColor);
+  text-align: right;
+  margin-bottom: 0.5rem;
+  float: right;
+  margin-left: 250px;
   }
-.header .togglenavBar .icon:hover{
-  color: var(--SecondaryColor);
 
+.navBarSections .Header .toggleNavbar .icon:hover{
+  color: var(--blackColor)!important;
 } 
 

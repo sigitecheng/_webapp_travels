@@ -11,7 +11,9 @@ import './mains.css'
 
 // import image 
 import img from '../../assets/img/1.jpg'
-// import img from '../../assets/img/2.jpg'
+import img2 from '../../assets/img/2.jpg'
+import img3 from '../../assets/img/3.jpg'
+
 
 
 // ===========================================================
@@ -29,24 +31,25 @@ const Data = [
         fee : '$500',
         descriptions : 'Animi nisi? Natus voluptatem quidem iusto nihil. Quia porro aperiam nobis enim, beatae consectetur explicabo quisquam voluptas esse itaque sapiente est maiores, at natus dolorum, rerum ab atque alias numquam maxime libero. Quos incidunt veritatis suscipit earum nobis vitae nostrum tempore nisi delectus perferendis iusto saepe corporis, iure eum quibusdam accusantium, quia magnam quas? Nihil, rerum',
     },
+    {
+        id: 2,
+        imgSrc: img2, 
+        destTitle: 'Jakarta',
+        locations : 'Jakarta',
+        grade : 'A',
+        fee : '$500',
+        descriptions : 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ducimus omnis ea optio autem aperiam incidunt fuga deleniti obcaecati unde cum sint, animi accusamus iusto eos dolorum molestiae consequatur nulla eum quisquam sunt totam. Tempora modi provident, ducimus nesciunt omnis animi velit eligendi fuga aliquid voluptatum nisi? Natus voluptatem quidem iusto nihil. Quia porro aperiam nobis enim, beatae consectetur explicabo quisquam voluptas esse itaque sapiente est maiores, at natus dolorum, rerum ab atque alias numquam maxime libero. Quos incidunt veritatis suscipit earum nobis vitae nostrum tempore nisi delectus perferendis iusto saepe corporis, iure eum quibusdam accusantium, quia magnam quas? Nihil, rerum',
+    }
+    ,{
+        id: 3,
+        imgSrc: img3, 
+        destTitle: 'Jakarta',
+        locations : 'Jakarta',
+        grade : 'A',
+        fee : '$500',
+        descriptions : 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ducimus omnis ea optio autem aperiam incidunt fuga deleniti obcaecati unde cum sint, animi accusamus iusto eos dolorum molestiae consequatur nulla eum quisquam sunt totam. Tempora modi provident, ducimus nesciunt omnis animi velit eligendi fuga aliquid voluptatum nisi? Natus voluptatem quidem iusto nihil. Quia porro aperiam nobis enim, beatae consectetur explicabo quisquam voluptas esse itaque sapiente est maiores, at natus dolorum, rerum ab atque alias numquam maxime libero. Quos incidunt veritatis suscipit earum nobis vitae nostrum tempore nisi delectus perferendis iusto saepe corporis, iure eum quibusdam accusantium, quia magnam quas? Nihil, rerum',
+    }
     // {
-    //     id: 2,
-    //     imgSrc: img, 
-    //     destTitle: 'Jakarta',
-    //     locations : 'Jakarta',
-    //     grade : 'A',
-    //     fee : '$500',
-    //     descriptions : 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ducimus omnis ea optio autem aperiam incidunt fuga deleniti obcaecati unde cum sint, animi accusamus iusto eos dolorum molestiae consequatur nulla eum quisquam sunt totam. Tempora modi provident, ducimus nesciunt omnis animi velit eligendi fuga aliquid voluptatum nisi? Natus voluptatem quidem iusto nihil. Quia porro aperiam nobis enim, beatae consectetur explicabo quisquam voluptas esse itaque sapiente est maiores, at natus dolorum, rerum ab atque alias numquam maxime libero. Quos incidunt veritatis suscipit earum nobis vitae nostrum tempore nisi delectus perferendis iusto saepe corporis, iure eum quibusdam accusantium, quia magnam quas? Nihil, rerum',
-    // }
-    // ,{
-    //     id: 3,
-    //     imgSrc: img3, 
-    //     destTitle: 'Jakarta',
-    //     locations : 'Jakarta',
-    //     grade : 'A',
-    //     fee : '$500',
-    //     descriptions : 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ducimus omnis ea optio autem aperiam incidunt fuga deleniti obcaecati unde cum sint, animi accusamus iusto eos dolorum molestiae consequatur nulla eum quisquam sunt totam. Tempora modi provident, ducimus nesciunt omnis animi velit eligendi fuga aliquid voluptatum nisi? Natus voluptatem quidem iusto nihil. Quia porro aperiam nobis enim, beatae consectetur explicabo quisquam voluptas esse itaque sapiente est maiores, at natus dolorum, rerum ab atque alias numquam maxime libero. Quos incidunt veritatis suscipit earum nobis vitae nostrum tempore nisi delectus perferendis iusto saepe corporis, iure eum quibusdam accusantium, quia magnam quas? Nihil, rerum',
-    // },{
     //     id: 4,
     //     imgSrc: img4, 
     //     destTitle: 'Jakarta',
@@ -69,7 +72,7 @@ const Data = [
 
     return(
 
-        <section className='Mains container section'>
+        <section className='Mains section'>
                 <div className="secTitle">
                     <h3 className='title'>
                         Most Viewed Destinations 
@@ -108,7 +111,7 @@ const Data = [
                                     </div>
 
                                     <button className='btn flex'>
-                                    Details<FcViewDetails className='icon'/>  
+                                    DETAILS<FcViewDetails className='icon'/>  
                                     </button>
 
                                 </div>

@@ -18,7 +18,7 @@ import {TbApps} from 'react-icons/tb'
 export default function Home() {
     
     return(
-            <section className='home'>
+            <section className='Home'>
                 <div className='overlay'></div>
                 <video src={video} muted autoPlay loop type="video/mp4"></video>
             
@@ -43,10 +43,11 @@ export default function Home() {
                                 <GrLocation className="icon"/>
                             </div>
                         </div>
+
                         <div className="dateInput">
                             <label htmlFor="date">Search</label>
                             <div className="input flex">
-                                <input type="date" placeholder='Enter The Name ....' />
+                                <input type="date" />
                                 <GrLocation className="icon"/>
                             </div>
                         </div>
