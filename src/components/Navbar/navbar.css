@@ -12,39 +12,37 @@
   --cardBG: rgb(225, 225, 235);
 }
 
-.navBarSections .Header {
-  position: fixed;
-  display: flex;
-  align-items: center;
-  justify-content: space-betweeen;
-  background: var(--bodyColor)!important;
-  width: 100%;
-  z-index: 2000;
-  box-shadow: 0 2px 4px rgba(2, 15, 29, 0, 904);
-}
+@media screen and (max-width: 480px) {
+  .navBarSections .Header {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-betweeen;
+    background: var(--bodyColor) !important;
+    width: 100%;
+    z-index: 2000;
+    box-shadow: 0 2px 4px rgba(2, 15, 29, 0, 904);
+  }
 
-.navBarSections .Header .logoDiv {
-  color: var(--SecondaryColor)!important;
-  font-weight: 600;
-  cursor: pointer;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 2rem;
-}
+  .navBarSections .Header .logoDiv {
+    color: var(--SecondaryColor) !important;
+    font-weight: 600;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2rem;
+  }
 
-.navBarSections .Header .logoDiv .icon {
-  font-size: 25px;
-  color: var(--PrimaryColor);
-  margin-bottom: 0.25rem;
-  justify-content: space-betweeen;
-}
+  .navBarSections .Header .logoDiv .icon {
+    font-size: 25px;
+    color: var(--PrimaryColor);
+    margin-bottom: 0.25rem;
+    justify-content: space-betweeen;
+  }
 
-
-/* ========================================== */
-@media screen and (max-width: 768px){
-.navBarSections .Header .navBar {
+  .navBarSections .Header .navBar {
     position: absolute;
-    background: var(--whiteColorDeam)!important;
+    background: var(--whiteColorDeam) !important;
     height: max-content;
     width: 80%;
     border-radius: 2rem;
@@ -56,8 +54,8 @@
     box-shadow: 0 4px 4px rgba(2, 15, 29, 0, 904);
     transition: 0.25s ease-in-out;
   }
-  
-.navBarSections .Header .navBar .navlists {
+
+  .navBarSections .Header .navBar .navlists {
     flex-direction: column;
     justify-content: center;
     width: 100%;
@@ -65,53 +63,52 @@
     padding: 0.5rem 0;
   }
 
-.navBarSections .Header .navBar .navlists .navitem {
+  .navBarSections .Header .navBar .navlists .navitem {
     padding: 0.5rem 0;
   }
 
-.navBarSections .Header .navBar .navlists .navitem .navLink {
-    color: var(--textColor)!important;
+  .navBarSections .Header .navBar .navlists .navitem .navLink {
+    color: var(--textColor) !important;
     font-size: 1rem;
     font-weight: 800;
   }
 
-.navBarSections .Header .navBar .navlists .navitem .navLink:hover {
-    color: var(--PrimaryColor)!important;
+  .navBarSections .Header .navBar .navlists .navitem .navLink:hover {
+    color: var(--PrimaryColor) !important;
   }
 
-.navBarSections .Header .navBar .navlists .btn {
+  .navBarSections .Header .navBar .navlists .btn {
     margin-top: 1rem;
     margin-bottom: 4rem;
   }
-.navBarSections .Header .navBar .navlists .btn a {
+  .navBarSections .Header .navBar .navlists .btn a {
     font-weight: 600;
-    color: var(--whiteColor)!important;
+    color: var(--whiteColor) !important;
   }
-.navBarSections .Header .navBar .navlists .closeNavbar {
+  .navBarSections .Header .navBar .navlists .closeNavbar {
     position: absolute;
     top: 0rem;
     right: 2rem;
-    color: var(--blackColor)!important;
-    
+    color: var(--blackColor) !important;
   }
-.navBarSections .Header .navBar .navlists .closeNavbar:hover {
-    color: var(--SecondaryColor)!important;
+  .navBarSections .Header .navBar .navlists .closeNavbar:hover {
+    color: var(--SecondaryColor) !important;
   }
 
-.navBarSections .Header .activeNavbar{
+  .navBarSections .Header .activeNavbar {
     top: 5.75rem;
   }
 
-.navBarSections .Header .toggleNavbar .icon {
-  font-size: 30px;
-  color: var(--PrimaryColor);
-  text-align: right;
-  margin-bottom: 0.5rem;
-  float: right;
-  margin-left: 250px;
+  .navBarSections .Header .toggleNavbar .icon {
+    font-size: 30px;
+    color: var(--PrimaryColor);
+    text-align: right;
+    margin-bottom: 0.5rem;
+    float: right;
+    margin-left: 250px;
   }
 
-.navBarSections .Header .toggleNavbar .icon:hover{
-  color: var(--blackColor)!important;
-} 
-
+  .navBarSections .Header .toggleNavbar .icon:hover {
+    color: var(--blackColor) !important;
+  }
+}
