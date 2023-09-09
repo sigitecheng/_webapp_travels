@@ -8,6 +8,7 @@ import {FiFacebook } from 'react-icons/fi'
 import {AiOutlineYoutube } from 'react-icons/ai'
 import {BsWhatsapp } from 'react-icons/bs'
 import {FiPhoneCall } from 'react-icons/fi'
+import {FiChevronRight } from 'react-icons/fi'
 
 // inport css style
 import './footer.css'
@@ -54,7 +55,6 @@ export default function Footer(){
                             <div className="footerParagraph">
                                 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla natus minima ab. Architecto, minus id?
                             </div>
-
                             <div className="footerSocials">
                                 <RxTwitterLogo className='icon' />
                                 <FiInstagram className='icon' />
@@ -64,7 +64,118 @@ export default function Footer(){
                                 <FiPhoneCall className='icon' />
                                 </div>
                         </div>
+
+
+                        <div className="footerLinks grid">
+                        {/*  GROUP ONE FOR LINKS  */}
+                            <div className="linkGroup">
+                                <span className='groupTitle'>
+                                    OUR AGENCY
+                                </span>
+
+                                <li className="footerList flex">
+                                    <FiChevronRight className='icon' />
+                                    Services
+                                </li>
+
+                                <li className="footerList flex">
+                                    <FiChevronRight className='icon' />
+                                    Insurance
+                                </li>
+
+                                <li className="footerList flex">
+                                    <FiChevronRight className='icon' />
+                                    Agency
+                                </li>
+
+                                <li className="footerList flex">
+                                    <FiChevronRight className='icon' />
+                                    Tourism
+                                </li>
+
+                                <li className="footerList flex">
+                                    <FiChevronRight className='icon' />
+                                    Payment
+                                </li>
+
+                            </div>
+
+
+                        {/*  GROUP TWO FOR LINKS  */}
+                            <div className="linkGroup">
+                                <span className='groupTitle'>
+                                    PARTNERTS
+                                </span>
+
+                                <li className="footerList flex">
+                                    <FiChevronRight className='icon' />
+                                    Booking
+                                </li>
+
+                                <li className="footerList flex">
+                                    <FiChevronRight className='icon' />
+                                    Rentcars
+                                </li>
+
+                                <li className="footerList flex">
+                                    <FiChevronRight className='icon' />
+                                    HostelWorld
+                                </li>
+
+                                <li className="footerList flex">
+                                    <FiChevronRight className='icon' />
+                                    Trivago
+                                </li>
+
+                                <li className="footerList flex">
+                                    <FiChevronRight className='icon' />
+                                    TripAdvisor
+                                </li>
+
+                            </div>
+
+
+                        {/*  GROUP THREE FOR LINKS  */}
+                            <div className="linkGroup">
+                                <span className='groupTitle'>
+                                    LAST MINUTES
+                                </span>
+
+                                <li className="footerList flex">
+                                    <FiChevronRight className='icon' />
+                                    London
+                                </li>
+
+                                <li className="footerList flex">
+                                    <FiChevronRight className='icon' />
+                                    California
+                                </li>
+
+                                <li className="footerList flex">
+                                    <FiChevronRight className='icon' />
+                                    Indonesia
+                                </li>
+
+                                <li className="footerList flex">
+                                    <FiChevronRight className='icon' />
+                                    Europe
+                                </li>
+
+                                <li className="footerList flex">
+                                    <FiChevronRight className='icon' />
+                                    Oceania
+                                </li>
+
+                            </div>
+                        </div>
+
+                        <div className="footerDiv flex">
+                            <small>Best Travel Website Theme</small>
+                            <small>Copyright Reserved- Designed by <a href="">Sigimatika</a></small>
+
+                        </div>
                     </div>
+
 
                 </div>
         </section>
