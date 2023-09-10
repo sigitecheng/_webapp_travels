@@ -10,45 +10,68 @@
   --inputColor: rgb(239, 239, 239);
   --bodyColor: rgb(240, 240, 246);
   --cardBG: rgb(225, 225, 235);
+  --red: rgb(200, 0, 0);
+  --gradientBiru: linear-gradient(to right, #66ccff, #003366);
+  --gradientHijau: linear-gradient(to right, #006600, #66ff99);
 }
 
-@media screen and (max-width: 480px) {
-  .navBarSections .Header {
-    position: fixed;
-    display: flex;
-    align-items: center;
-    justify-content: space-betweeen;
-    background: var(--bodyColor) !important;
-    width: 100%;
-    z-index: 2000;
-    box-shadow: 0 2px 4px rgba(2, 15, 29, 0, 904);
-  }
+/* ============================= ANDROID DAN IOS  ================================ */
+.navBarSections .Header {
+  position: fixed;
+  display: flex;
+  top: 0;
+  /* align-items: left; */
+  justify-content: space-betweeen;
+  background: var(--bodyColor) !important;
+  width: 100%;
+  z-index: 2000;
+  margin-left: -1rem;
+  margin-top: -0.25rem;
+  box-shadow: 0 2px 4px rgba(2, 15, 29, 0, 904);
+}
 
-  .navBarSections .Header .logoDiv {
-    color: var(--SecondaryColor) !important;
-    font-weight: 600;
-    cursor: pointer;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 2rem;
-  }
+.navBarSections .Header .logoDiv {
+  color: var(--blackColor) !important;
+  font-weight: 600;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 2rem;
+  margin-top: 1rem;
+}
 
-  .navBarSections .Header .logoDiv .icon {
-    font-size: 25px;
-    color: var(--PrimaryColor);
-    margin-bottom: 0.25rem;
-    justify-content: space-betweeen;
-  }
+.navBarSections .Header .logoDiv .icon {
+  font-size: 30px;
+  color: var(--PrimaryColor);
+  margin-right: -4rem;
+  justify-content: space-betweeen;
+  margin-top: 1.75rem;
+}
 
+.navBarSections .Header .logoDiv h1 {
+  font-size: 30px;
+  color: var(--PrimaryColor);
+  margin-right: -6rem;
+  justify-content: space-betweeen;
+  margin-left: 4.5rem;
+  margin-top: 2.2rem;
+}
+
+/* ================================================== */
+/* MEDIA UNTUK ANDROID AND IOS 1200 992 768 576;  */
+/* ================================================== */
+
+@media screen and (max-width: 576px) {
   .navBarSections .Header .navBar {
     position: absolute;
-    background: var(--whiteColorDeam) !important;
+    background: var(--bodyColor) !important;
     height: max-content;
-    width: 80%;
+    width: 85%;
     border-radius: 2rem;
     top: -500rem;
-    left: 50%;
-    padding: 1.5rem 1rem;
+    left: 47.5%;
+    margin-top: 4rem;
+    padding: 1.25rem 1rem;
     transform: translateX(-50%);
     z-index: 1000;
     box-shadow: 0 4px 4px rgba(2, 15, 29, 0, 904);
@@ -69,27 +92,32 @@
 
   .navBarSections .Header .navBar .navlists .navitem .navLink {
     color: var(--textColor) !important;
-    font-size: 1rem;
-    font-weight: 800;
+    font-size: 16px;
+    font-weight: 600;
   }
 
   .navBarSections .Header .navBar .navlists .navitem .navLink:hover {
     color: var(--PrimaryColor) !important;
+    transform: translateX(8px);
   }
 
   .navBarSections .Header .navBar .navlists .btn {
     margin-top: 1rem;
-    margin-bottom: 4rem;
+    margin-bottom: 1rem;
+    padding: 0.5rem 4rem 0.5rem 4rem;
+    background: var(--gradientBiru);
   }
+
   .navBarSections .Header .navBar .navlists .btn a {
     font-weight: 600;
+    font-size: 16px;
     color: var(--whiteColor) !important;
   }
   .navBarSections .Header .navBar .navlists .closeNavbar {
     position: absolute;
     top: 0rem;
     right: 2rem;
-    color: var(--blackColor) !important;
+    color: var(--red) !important;
   }
   .navBarSections .Header .navBar .navlists .closeNavbar:hover {
     color: var(--SecondaryColor) !important;
@@ -110,5 +138,190 @@
 
   .navBarSections .Header .toggleNavbar .icon:hover {
     color: var(--blackColor) !important;
+  }
+
+  .navBarSections .Header .toggleNavbar {
+    display: block;
+  }
+}
+
+/* ================================================== */
+/* MEDIA UNTUK TABLET 1200 992 768 576; */
+/* ================================================== */
+
+@media screen and (min-width: 768px) {
+  .toggleNavbar,
+  .closeNavbar {
+    display: none;
+  }
+
+  .navBarSections .Header {
+    position: fixed;
+    display: flex;
+    top: 0;
+    align-items: left;
+    justify-content: space-betweeen;
+    background: var(--bodyColor) !important;
+    width: 100%;
+    z-index: 2000;
+    margin-left: -1rem;
+    margin-top: -0.25rem;
+    box-shadow: 0 2px 4px rgba(2, 15, 29, 0, 904);
+    margin-bottom: 2rem;
+  }
+
+  .navBarSections .Header .logoDiv .icon {
+    font-size: 30px;
+    color: var(--PrimaryColor) !important;
+  }
+
+  .navBarSections .Header .logoDiv .icon:hover {
+    color: var(--gradientHijau) !important;
+  }
+
+  .navBarSections .Header .logoDiv h1 {
+    font-size: 30px;
+    margin-right: 10px;
+    color: var(--PrimaryColor) !important;
+  }
+
+  .navBarSections .Header .logoDiv h1:cover {
+    color: var(--gradientHijau) !important;
+  }
+
+  .navBarSections .Header {
+    top: 10;
+    margin-bottom: 0.75rem;
+  }
+
+  .navBarSections .Header .navBar .navlists {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    flex-direction: row;
+  }
+
+  .navBarSections .Header .navBar .navlists .navitem .navLink {
+    color: var(--textColor);
+    padding: 0 0rem;
+    font-size: 14px;
+    font-weight: 800;
+    margin: 2px;
+    margin-left: 5px;
+    text-align: right;
+  }
+
+  .navBarSections .Header .navBar .navlists .navitem .navLink:hover {
+    color: var(--PrimaryColor) !important;
+  }
+
+  .navBarSections .Header .navBar .navlists .btn {
+    background: var(--gradientBiru) !important;
+    cursor: pointer;
+    margin-top: 1rem;
+    margin-bottom: 0.25rem;
+    padding: 0.5rem 1rem;
+  }
+
+  .navBarSections .Header .navBar .navlists .btn:hover {
+    background: var(--gradientHijau) !important;
+    border: none;
+  }
+
+  .navBarSections .Header .navBar .navlists .btn a {
+    font-weight: 600;
+    font-size: 12px;
+    color: var(--whiteColor) !important;
+  }
+}
+
+/* ================================================== */
+/* MEDIA UNTUK LAPTOP  1200 992 768 576;*/
+/* ================================================== */
+
+@media screen and (min-width: 992px) {
+  .navBarSections .Header .logoDiv h1 {
+    font-size: 30px;
+    margin-right: 175px;
+    color: var(--PrimaryColor) !important;
+  }
+
+  .navBarSections .Header .navBar .navlists .navitem .navLink {
+    color: var(--textColor);
+    padding: 0 0rem;
+    font-size: 16px;
+    font-weight: 800;
+    margin: 5px;
+    margin-left: 5px;
+    text-align: right;
+  }
+
+  .navBarSections .Header .navBar .navlists .navitem .navLink:hover {
+    color: var(--PrimaryColor) !important;
+  }
+
+  .navBarSections .Header .navBar .navlists .btn {
+    background: var(--gradientBiru) !important;
+    cursor: pointer;
+    margin-top: 1rem;
+    margin-bottom: 0.25rem;
+    padding: 0.5rem 1rem;
+  }
+
+  .navBarSections .Header .navBar .navlists .btn:hover {
+    background: var(--gradientHijau) !important;
+    border: none;
+  }
+
+  .navBarSections .Header .navBar .navlists .btn a {
+    font-weight: 600;
+    font-size: 12px;
+    color: var(--whiteColor) !important;
+  }
+}
+
+/* ================================================== */
+/* MEDIA UNTUK LAPTOP  1200 992 768 576;*/
+/* ================================================== */
+
+@media screen and (min-width: 1200px) {
+  .navBarSections .Header .logoDiv h1 {
+    font-size: 30px;
+    margin-right: 475px;
+    color: var(--PrimaryColor) !important;
+  }
+
+  .navBarSections .Header .navBar .navlists .navitem .navLink {
+    color: var(--textColor);
+    padding: 0 0rem;
+    font-size: 16px;
+    font-weight: 800;
+    margin: 5px;
+    margin-left: 5px;
+    text-align: right;
+  }
+
+  .navBarSections .Header .navBar .navlists .navitem .navLink:hover {
+    color: var(--PrimaryColor) !important;
+  }
+
+  .navBarSections .Header .navBar .navlists .btn {
+    background: var(--gradientBiru) !important;
+    cursor: pointer;
+    margin-top: 1rem;
+    margin-bottom: 0.25rem;
+    padding: 0.5rem 1rem;
+  }
+
+  .navBarSections .Header .navBar .navlists .btn:hover {
+    background: var(--gradientHijau) !important;
+    border: none;
+  }
+
+  .navBarSections .Header .navBar .navlists .btn a {
+    font-weight: 600;
+    font-size: 12px;
+    color: var(--whiteColor) !important;
   }
 }

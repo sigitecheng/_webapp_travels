@@ -1,4 +1,4 @@
-// import {useState} from 'react'
+ import {useEffect} from 'react'
 
 // import icon 
 import { HiOutlineLocationMarker } from 'react-icons/hi';
@@ -8,6 +8,9 @@ import { FcViewDetails } from 'react-icons/fc';
 //import tools 
 import './mains.css'
 
+// import aos 
+import Aos from 'aos'
+import 'aos/dist/aos.css'
 
 // import image 
 import img from '../../assets/img/1.jpg'
@@ -19,6 +22,10 @@ import img3 from '../../assets/img/3.jpg'
 // ===========================================================
 
 export default function Mains(){
+
+    useEffect(()=>{
+        Aos.init({duration:2000})
+    },[])
 
 const Data = [
     {
@@ -74,7 +81,7 @@ const Data = [
 
         <section className='Mains section'>
                 <div className="secTitle">
-                    <h3 className='title'>
+                    <h3 data-aos="fade-right" data-aos-duration="3000" className='title'>
                         Most Viewed Destinations 
                     </h3>
                 </div>
@@ -84,7 +91,7 @@ const Data = [
                     {
                         Data.map(({id, imgSrc, destTitle, locations, grade, fee, descriptions}) => { 
                             return(
-                            <div key={id} className='singleDestination'>
+                            <div data-aos='fade-up' key={id} className='singleDestination'>
                                 <div className="imageDiv">
                                     <img src={imgSrc} alt={destTitle} />
                                 </div>

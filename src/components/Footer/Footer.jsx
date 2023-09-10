@@ -1,4 +1,4 @@
-
+import { useEffect } from 'react'
 // import icon react 
 import {FiSend } from 'react-icons/fi'
 import {MdOutlineTravelExplore } from 'react-icons/md'
@@ -16,10 +16,18 @@ import './footer.css'
 // import video untuk halaman footer  
 import video2 from '../../assets/air.mp4'
 
-
+// import aos 
+import Aos from 'aos'
+import 'aos/dist/aos.css'
 
 // ==========================================================================
 export default function Footer(){
+
+
+    useEffect(()=>{
+        Aos.init({duration:2000})
+    },[])
+
     return(
       
         <section className='Footer'>
@@ -30,14 +38,14 @@ export default function Footer(){
 
                 <div className="secContent container">
                     <div className="contactDiv flex">
-                        <div className="text">
+                        <div data-aos="fade-up" className="text">
                             <small>KEEP IN TOUCH</small>
                             <h2>Travel With Us</h2>
                         </div> 
 
                         <div className="inputDiv flex">
-                            <input type="text" placeholder='Enter Email Address' />
-                            <button className='btn flex' type='submit'>
+                            <input data-aos="fade-up" type="text" placeholder='Enter Email Address' />
+                            <button data-aos="fade-up" className='btn flex' type='submit'>
                               Send <FiSend className='icon'/>
                             </button>
                         </div>
@@ -52,10 +60,10 @@ export default function Footer(){
                                 </a>
                             </div>
 
-                            <div className="footerParagraph">
+                            <div data-aos="fade-up" className="footerParagraph">
                                 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla natus minima ab. Architecto, minus id?
                             </div>
-                            <div className="footerSocials">
+                            <div data-aos="fade-up" data-aos-duration="6000" className="footerSocials">
                                 <RxTwitterLogo className='icon' />
                                 <FiInstagram className='icon' />
                                 <FiFacebook className='icon' />
@@ -68,7 +76,7 @@ export default function Footer(){
 
                         <div className="footerLinks grid">
                         {/*  GROUP ONE FOR LINKS  */}
-                            <div className="linkGroup">
+                            <div data-aos="fade-up" data-aos-duration="3000" className="linkGroup">
                                 <span className='groupTitle'>
                                     OUR AGENCY
                                 </span>
@@ -102,7 +110,7 @@ export default function Footer(){
 
 
                         {/*  GROUP TWO FOR LINKS  */}
-                            <div className="linkGroup">
+                            <div data-aos="fade-up" data-aos-duration="4000" className="linkGroup">
                                 <span className='groupTitle'>
                                     PARTNERTS
                                 </span>
@@ -136,7 +144,7 @@ export default function Footer(){
 
 
                         {/*  GROUP THREE FOR LINKS  */}
-                            <div className="linkGroup">
+                            <div data-aos="fade-up" data-aos-duration="5000" className="linkGroup">
                                 <span className='groupTitle'>
                                     LAST MINUTES
                                 </span>
@@ -172,7 +180,6 @@ export default function Footer(){
                         <div className="footerDiv flex">
                             <small>Best Travel Website Theme</small>
                             <small>Copyright Reserved- Designed by <a href="">Sigimatika</a></small>
-
                         </div>
                     </div>
 

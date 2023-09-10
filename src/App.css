@@ -12,6 +12,10 @@
   --cardBG: rgb(225, 225, 235);
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 * {
   padding: 0;
   margin: 0;

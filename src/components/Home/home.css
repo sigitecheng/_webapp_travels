@@ -10,6 +10,7 @@
   --inputColor: rgb(239, 239, 239);
   --bodyColor: rgb(240, 240, 246);
   --cardBG: rgb(225, 225, 235);
+  --gradientBiru: linear-gradient(to right, #66ccff, #003366);
 }
 
 .Home {
@@ -81,14 +82,14 @@
   display: block;
   color: var(--textColor) !important;
   padding-bottom: 10px;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 500;
 }
 
 .Home .homeContent .cardDiv .destinationInput input {
   color: var(--textColor) !important;
-  padding: 8px 25px;
-  font-size: 18px;
+  padding: 8px 10px;
+  font-size: 16px;
   font-weight: 500;
   border-radius: 1rem;
   border: 0.5px solid;
@@ -111,13 +112,13 @@
   display: block;
   color: var(--textColor) !important;
   padding-bottom: 10px;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 500;
 }
 
 .Home .homeContent .cardDiv .dateInput input {
   color: var(--textColor) !important;
-  padding: 10px 75px;
+  padding: 10px 47.5px;
   font-size: 18px;
   font-weight: 500;
   border-radius: 1rem;
@@ -141,6 +142,7 @@
   color: var(--textColor) !important;
   font-size: 18px;
   justify-content: space-between;
+  margin-left: 125px;
 }
 
 .Home .homeContent .cardDiv .priceInput .input {

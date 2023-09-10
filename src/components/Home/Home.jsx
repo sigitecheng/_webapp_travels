@@ -1,22 +1,28 @@
+import {useEffect} from 'react'
 
 import './home.css'
 import video from '../../assets/air.mp4'
 
+// import icon
 import {GrLocation} from 'react-icons/gr'
 import {HiFilter} from 'react-icons/hi'
 import {FiFacebook} from 'react-icons/fi'
 import {AiOutlineInstagram} from 'react-icons/ai'
-// import {BsListTask} from 'react-icons/bs'
 import {TbApps} from 'react-icons/tb'
 
 
-// import {FiFacFaTripadvisorebook} from 'react-icons/fi'
-
-
-
-
+// import aos 
+import Aos from 'aos'
+import 'aos/dist/aos.css'
+// ===================================================================================================
 export default function Home() {
-    
+
+    useEffect(()=>{
+        Aos.init({duration:2000})
+    },[])
+
+    // install npm i aos 
+
     return(
             <section className='Home'>
                 <div className='overlay'></div>
@@ -26,26 +32,26 @@ export default function Home() {
             <div className="homeContent container">
                 
                 <div className='textDiv'>
-                    <span className='smallText'>
+                    <span data-aos="fade-up" className='smallText'>
                         Our Packages
                     </span>
-                    <h1 className='homeTitle'>
-                        Search Your Goods
+                    <h1 data-aos="fade-up" className='homeTitle'>
+                        Search Your Destinations
 
                     </h1>
                 </div>
 
-                <div className='cardDiv grid'>
+                <div data-aos="fade-up" className='cardDiv grid'>
                         <div className="destinationInput">
-                            <label htmlFor="city">Search</label>
+                            <label htmlFor="city">Search Your Destinations</label>
                             <div className="input flex">
-                                <input type="text" placeholder='Enter The Name ....' />
+                                <input type="text" placeholder='Enter The Name' />
                                 <GrLocation className="icon"/>
                             </div>
                         </div>
 
                         <div className="dateInput">
-                            <label htmlFor="date">Search</label>
+                            <label htmlFor="date">Search Your Date</label>
                             <div className="input flex">
                                 <input type="date" />
                                 <GrLocation className="icon"/>
@@ -69,16 +75,16 @@ export default function Home() {
 
                 </div>
 
-                <div className='homeFooterIcons flex'>
-                    <div className='rightIcons'>
+                <div data-aos="fade-up" className='homeFooterIcons flex'>
+                    <div data-aos="fade-up" className='rightIcons'>
                         <FiFacebook className='icon' />
                         <AiOutlineInstagram className='icon' />
                         {/* <FiFacFaTripadvisorebook className='icon' /> */}
                     </div>
                    
-                    <div className='leftIcons'>
+                    <div data-aos="fade-up" className='leftIcons'>
                         <TbApps className='icon' />
-                        <TbApps className='icon' />
+                        <AiOutlineInstagram className='icon' />
 
                         {/* <FiFacFaTripadvisorebook className='icon' /> */}
                     </div>

@@ -1,7 +1,8 @@
 import {useState} from 'react'
-import {GiTeePipe } from 'react-icons/gi'
+import {GiAirplaneDeparture} from 'react-icons/gi'
 import {AiFillCloseCircle} from 'react-icons/ai'
 import {PiDotsNineBold} from 'react-icons/pi'
+
 import './navbar.css'
 
 export default function Navbar(){
@@ -24,7 +25,9 @@ export default function Navbar(){
             <header className='Header flex'>
                 <div className='logoDiv'>
                     <a href="" className='logo flex'>
-                    <GiTeePipe className='icon' /><h1>Travel</h1>
+                    <GiAirplaneDeparture className='icon' /><h1>Travel.</h1>
+
+                    
                     {/* <h1>Sigitmatika Air Solutions</h1> */}
                     </a>
                 </div>
