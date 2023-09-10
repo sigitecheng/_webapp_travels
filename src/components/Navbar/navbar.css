@@ -62,6 +62,21 @@
 /* ================================================== */
 
 @media screen and (max-width: 576px) {
+  .navBarSections .Header {
+    position: fixed;
+    display: flex;
+    align-items: left;
+    /* justify-content: space-betweeen; */
+    background-color: var(--gradientBiru) !important;
+    backdrop-filter: blur(50px);
+    width: 100%;
+    /* z-index: 2000; */
+    margin-left: -1rem;
+    margin-top: -2rem;
+    height: 20vh;
+    /* box-shadow: 0 2px 4px rgba(2, 15, 29, 0, 904); */
+  }
+
   .navBarSections .Header .navBar {
     position: absolute;
     background: var(--bodyColor) !important;
@@ -158,6 +173,21 @@
   .navBarSections .Header {
     position: fixed;
     display: flex;
+    align-items: left;
+    /* justify-content: space-betweeen; */
+    background-color: var(--gradientBiru) !important;
+    backdrop-filter: blur(50px);
+    width: 100%;
+    /* z-index: 2000; */
+    margin-left: -1rem;
+    margin-top: -2rem;
+    height: 20vh;
+    /* box-shadow: 0 2px 4px rgba(2, 15, 29, 0, 904); */
+  }
+  /* 
+  .navBarSections .Header {
+    position: fixed;
+    display: flex;
     top: 0;
     align-items: left;
     justify-content: space-betweeen;
@@ -168,7 +198,8 @@
     margin-top: -0.25rem;
     box-shadow: 0 2px 4px rgba(2, 15, 29, 0, 904);
     margin-bottom: 2rem;
-  }
+    backdrop-filter: blur(2px);
+  } */
 
   .navBarSections .Header .logoDiv .icon {
     font-size: 30px;
@@ -241,6 +272,21 @@
 /* ================================================== */
 
 @media screen and (min-width: 992px) {
+  .navBarSections .Header {
+    position: fixed;
+    display: flex;
+    align-items: left;
+    /* justify-content: space-betweeen; */
+    background-color: var(--gradientBiru) !important;
+    backdrop-filter: blur(50px);
+    width: 100%;
+    /* z-index: 2000; */
+    margin-left: -1rem;
+    margin-top: -2rem;
+    height: 20vh;
+    /* box-shadow: 0 2px 4px rgba(2, 15, 29, 0, 904); */
+  }
+
   .navBarSections .Header .logoDiv h1 {
     font-size: 30px;
     margin-right: 175px;
@@ -286,15 +332,30 @@
 /* ================================================== */
 
 @media screen and (min-width: 1200px) {
+  .navBarSections .Header {
+    position: fixed;
+    display: flex;
+    align-items: left;
+    /* justify-content: space-betweeen; */
+    background-color: var(--gradientBiru) !important;
+    backdrop-filter: blur(50px);
+    width: 100%;
+    /* z-index: 2000; */
+    margin-left: -1rem;
+    margin-top: -2rem;
+    height: 20vh;
+    /* box-shadow: 0 2px 4px rgba(2, 15, 29, 0, 904); */
+  }
+
   .navBarSections .Header .logoDiv h1 {
     font-size: 30px;
     margin-right: 475px;
-    color: var(--PrimaryColor) !important;
+    color: var(--gradientBiru) !important;
+    box-shadow: 0 8px 8px var(--gradientColor);
   }
 
   .navBarSections .Header .navBar .navlists .navitem .navLink {
     color: var(--textColor);
-    padding: 0 0rem;
     font-size: 16px;
     font-weight: 800;
     margin: 5px;
@@ -310,7 +371,7 @@
     background: var(--gradientBiru) !important;
     cursor: pointer;
     margin-top: 1rem;
-    margin-bottom: 0.25rem;
+    /* margin-bottom: 0.25rem; */
     padding: 0.5rem 1rem;
   }
 
