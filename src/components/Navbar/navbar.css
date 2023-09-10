@@ -22,10 +22,10 @@
   top: 0;
   /* align-items: left; */
   justify-content: space-betweeen;
-  background: var(--bodyColor) !important;
+  background: var(--whiteColorDeam) !important;
   width: 100%;
   z-index: 2000;
-  margin-left: -1rem;
+  margin-left: -1.5rem;
   margin-top: -0.25rem;
   box-shadow: 0 2px 4px rgba(2, 15, 29, 0, 904);
 }
@@ -67,7 +67,7 @@
     display: flex;
     align-items: left;
     /* justify-content: space-betweeen; */
-    background-color: var(--gradientBiru) !important;
+    background-color: var(--whiteColorDeam) !important;
     backdrop-filter: blur(50px);
     width: 100%;
     /* z-index: 2000; */
