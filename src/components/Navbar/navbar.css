@@ -61,7 +61,7 @@
 /* MEDIA UNTUK ANDROID AND IOS 1200 992 768 576;  */
 /* ================================================== */
 
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 480px) {
   .navBarSections .Header {
     position: fixed;
     display: flex;
@@ -73,7 +73,7 @@
     /* z-index: 2000; */
     margin-left: -1rem;
     margin-top: -2rem;
-    height: 20vh;
+    height: 12.5vh;
     /* box-shadow: 0 2px 4px rgba(2, 15, 29, 0, 904); */
   }
 
@@ -149,10 +149,11 @@
     margin-bottom: 0.5rem;
     float: right;
     margin-left: 250px;
+    margin-top: 27.5px;
   }
 
   .navBarSections .Header .toggleNavbar .icon:hover {
-    color: var(--blackColor) !important;
+    color: var(--gradientHijau) !important;
   }
 
   .navBarSections .Header .toggleNavbar {
@@ -184,22 +185,6 @@
     height: 20vh;
     /* box-shadow: 0 2px 4px rgba(2, 15, 29, 0, 904); */
   }
-  /* 
-  .navBarSections .Header {
-    position: fixed;
-    display: flex;
-    top: 0;
-    align-items: left;
-    justify-content: space-betweeen;
-    background: var(--bodyColor) !important;
-    width: 100%;
-    z-index: 2000;
-    margin-left: -1rem;
-    margin-top: -0.25rem;
-    box-shadow: 0 2px 4px rgba(2, 15, 29, 0, 904);
-    margin-bottom: 2rem;
-    backdrop-filter: blur(2px);
-  } */
 
   .navBarSections .Header .logoDiv .icon {
     font-size: 30px;
@@ -283,7 +268,7 @@
     /* z-index: 2000; */
     margin-left: -1rem;
     margin-top: -2rem;
-    height: 20vh;
+    height: 15vh;
     /* box-shadow: 0 2px 4px rgba(2, 15, 29, 0, 904); */
   }
 
@@ -343,7 +328,7 @@
     /* z-index: 2000; */
     margin-left: -1rem;
     margin-top: -2rem;
-    height: 20vh;
+    height: 15vh;
     /* box-shadow: 0 2px 4px rgba(2, 15, 29, 0, 904); */
   }
 
