@@ -14,7 +14,7 @@ import {FiChevronRight } from 'react-icons/fi'
 import './footer.css'
 
 // import video untuk halaman footer  
-import video2 from '../../assets/air.mp4'
+import video2 from '../../assets/img/water2.mp4'
 
 // import aos 
 import Aos from 'aos'
@@ -36,7 +36,7 @@ export default function Footer(){
                          </video>
                 </div>
 
-                <div className="secContent container">
+                <div className="secContent container section">
                     <div className="contactDiv flex">
                         <div data-aos="fade-up" className="text">
                             <small>KEEP IN TOUCH</small>
@@ -146,7 +146,7 @@ export default function Footer(){
                         {/*  GROUP THREE FOR LINKS  */}
                             <div data-aos="fade-up" data-aos-duration="5000" className="linkGroup">
                                 <span className='groupTitle'>
-                                    LAST MINUTES
+                                 TOUR
                                 </span>
 
                                 <li className="footerList flex">

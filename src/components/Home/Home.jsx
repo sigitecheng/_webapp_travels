@@ -1,7 +1,7 @@
 import {useEffect} from 'react'
 
 import './home.css'
-import video from '../../assets/air.mp4'
+import video from '../../assets/img/water1.mp4'
 
 // import icon
 import {GrLocation} from 'react-icons/gr'
@@ -29,7 +29,7 @@ export default function Home() {
                 <video src={video} muted autoPlay loop type="video/mp4"></video>
             
 
-            <div className="homeContent container">
+            <div className="homeContent container section">
                 
                 <div className='textDiv'>
                     <span data-aos="fade-up" className='smallText'>

@@ -10,8 +10,12 @@
   --inputColor: rgb(239, 239, 239);
   --bodyColor: rgb(240, 240, 246);
   --cardBG: rgb(225, 225, 235);
+  --red: rgb(200, 0, 0);
   --gradientBiru: linear-gradient(to right, #66ccff, #003366);
+  --gradientHijau: linear-gradient(to right, #006600, #66ff99);
+
 }
+
 
 .Home {
   width: 100%;
@@ -205,7 +209,7 @@
   margin-bottom: 0.5rem;
 }
 
-.homeFooterIcons {
+.Home .homeContent .homeFooterIcons {
   width: 100%;
   font-size: 15px;
   justify-content: space-between;
@@ -215,10 +219,97 @@
   margin-top: -2.5rem;
 }
 
-.homeFooterIcons .icon:hover {
+.Home .homeContent .homeFooterIcons .icon:hover {
   fill: white; /* Warna isi lingkaran */
   stroke: white; /* Warna garis tepi lingkaran */
   margin-bottom: 0.25rem;
 }
 
 /* MEDIA QUERYS */
+
+/* ================================================== */
+/* MEDIA UNTUK ANDROID  1200 992 768 576;*/
+/* ================================================== */
+
+@media screen and (min-width: 576px) {
+  .Home .homeContent .textDiv .smallText {
+    font-size: 16px;
+  }
+  .Home .homeContent .textDiv .homeTitle {
+    font-size: 2.3rem;
+    position: relative;
+    width: max-content;
+  }
+  .Home .homeContent .textDiv .homeTitle::after {
+    position: absolute;
+    content: "";
+    background: var(--SecondaryColor) !important;
+    height: 5px;
+    width: 235px;
+    right: 0px;
+    bottom: 5px;
+    z-index: -1;
+  }
+  .Home .homeContent .cardDiv {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* ================================================== */
+/* MEDIA UNTUK TABLET  1200 992 768 576;*/
+/* ================================================== */
+
+@media screen and (min-width: 768px) {
+  .Home .homeContent .cardDiv {
+    padding: 2rem 1rem;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* ================================================== */
+/* MEDIA UNTUK LAPTOP  1200 992 768 576;*/
+/* ================================================== */
+
+@media screen and (min-width: 992px) {
+  .Home {
+    height: 95vh;
+  }
+}
+
+/* ================================================== */
+/* MEDIA UNTUK PALING BESAR  1200 992 768 576;*/
+/* ================================================== */
+
+@media screen and (min-width: 1200px) {
+  .Home {
+    height: 100vh;
+  }
+
+  .Home .homeContent {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .Home .homeContent .cardDiv {
+    padding: 2rem 1rem;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .Home .homeContent .cardDiv .input {
+    margin-bottom: 1rem;   
+  }
+
+  .Home .homeContent .cardDiv .searchOptions {
+    bottom: -6rem;
+    padding: 3px 1rem;
+    background: var(--gradientBiru)!important;
+  }
+  
+  .Home .homeContent .cardDiv .searchOptions:hover {
+    background: var(--gradientHijau) !important;
+    border: none;
+  }
+
+  .Home .homeContent .cardDiv .searchOptions span {
+    font-size: 18px;
+  }

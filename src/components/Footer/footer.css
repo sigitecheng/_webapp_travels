@@ -10,6 +10,10 @@
   --inputColor: rgb(239, 239, 239);
   --bodyColor: rgb(240, 240, 246);
   --cardBG: rgb(225, 225, 235);
+  --red: rgb(200, 0, 0);
+  --gradientBiru: linear-gradient(to right, #66ccff, #003366);
+  --gradientHijau: linear-gradient(to right, #006600, #66ff99);
+  --orangeMark: rgb(255, 175, 50);
 }
 
 /* ================================ */
@@ -217,16 +221,266 @@
   bottom: 0;
   left: 0;
   right: 0;
-  background: var(--SecondaryColor) !important;
+  background: var(--gradientBiru) !important;
   padding: 0.5rem 2rem;
   margin-right: -2rem;
   margin-left: -2rem;
   border-radius: 2rem;
   margin-top: 2rem;
+  justify-content: space-between;
+  border: none;
 }
 
 .Footer .secContent .footerCard .footerDiv small {
   font-size: 13px;
   color: var(--whiteColor) !important;
   margin-bottom: 0.5rem;
+}
+
+/* ================================================== */
+/* MEDIA UNTUK LAPTOP  1200 992 768 576;*/
+/* ================================================== */
+
+@media screen and (max-width: 576px) {
+  .Footer {
+    padding: 1rem 0;
+  }
+
+  .Footer .secContent .footerCard .footerIntro .footerSocials .icon {
+    color: var(--textColor) !important;
+    font-size: 18px;
+    margin: 0.75rem;
+  }
+
+  .Footer .secContent .footerCard .footerIntro .footerSocials .icon:hover {
+    color: var(--PrimaryColor) !important;
+    transform: translateY(5px);
+  }
+
+  .Footer .secContent .footerCard .footerDiv {
+    justify-content: space-between;
+    flex-direction: flow;
+  }
+
+  .Footer .secContent .contactDiv .inputDiv .btn {
+    width: max-content;
+    padding: 0 6rem;
+    background: var(--gradientBiru) !important;
+  }
+
+  .Footer .secContent .contactDiv .inputDiv .btn:hover {
+    width: max-content;
+    padding: 0 6rem;
+    background: var(--gradientHijau) !important;
+    border: none;
+  }
+
+  .Footer .secContent .footerCard .footerDiv small {
+    font-size: 14px;
+    color: var(--whiteColor) !important;
+  }
+
+  .Footer .secContent .footerCard .footerDiv a {
+    font-size: 14px;
+    color: var(--orangeMark) !important;
+  }
+
+  .Footer .secContent .footerCard .footerDiv a:hover {
+    font-size: 14px;
+    color: var(--SecondaryColor) !important;
+  }
+}
+/* ========================================= */
+@media screen and (min-width: 576px) {
+  .Footer .secContent .footerCard .footerDiv {
+    justify-content: space-between;
+    flex-direction: flow;
+  }
+
+  .Footer .secContent .footerCard .footerDiv small {
+    font-size: 14px;
+    color: var(--whiteColor) !important;
+  }
+
+  .Footer .secContent .footerCard .footerIntro .footerSocials .icon {
+    color: var(--textColor) !important;
+    font-size: 25px;
+  }
+
+  .Footer .secContent .footerCard .footerIntro .footerSocials .icon:hover {
+    color: var(--PrimaryColor) !important;
+    transform: translateY(5px);
+  }
+
+  .Footer .secContent .footerCard .footerLinks .linkGroup .footerList {
+    color: var(--textColor) !important;
+  }
+
+  .Footer .secContent .contactDiv .inputDiv .btn {
+    width: max-content;
+    padding: 0 2rem;
+    background: var(--gradientBiru) !important;
+  }
+
+  .Footer .secContent .contactDiv .inputDiv .btn:hover {
+    width: max-content;
+    padding: 0 2rem;
+    background: var(--gradientHijau) !important;
+    border: none;
+  }
+
+  .Footer .secContent .footerCard .footerDiv {
+    justify-content: space-between;
+    flex-direction: flow;
+  }
+
+  .Footer .secContent .footerCard .footerDiv small {
+    font-size: 14px;
+    color: var(--whiteColor) !important;
+  }
+
+  .Footer .secContent .footerCard .footerDiv a {
+    font-size: 14px;
+    color: var(--orangeMark) !important;
+  }
+
+  .Footer .secContent .footerCard .footerDiv a:hover {
+    font-size: 14px;
+    color: var(--SecondaryColor) !important;
+  }
+}
+
+/* ================================================== */
+/* MEDIA UNTUK LAPTOP  1200 992 768 576;*/
+/* ================================================== */
+
+@media screen and (min-width: 768px) {
+  .Footer .secContent .contactDiv {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .Footer .secContent .contactDiv .inputDiv {
+    width: max-content;
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+
+  .Footer .secContent .contactDiv .inputDiv input {
+    width: 75%;
+  }
+
+  .Footer .secContent .contactDiv .inputDiv .btn {
+    width: max-content;
+    padding: 0 2rem;
+    background: var(--gradientBiru) !important;
+  }
+
+  .Footer .secContent .contactDiv .inputDiv .btn:hover {
+    width: max-content;
+    padding: 0 2rem;
+    background: var(--gradientHijau) !important;
+    border: none;
+  }
+
+  .Footer .secContent .footerCard .footerIntro .footerSocials .icon {
+    color: var(--textColor) !important;
+    font-size: 25px;
+  }
+
+  .Footer .secContent .footerCard .footerIntro .footerSocials .icon:hover {
+    color: var(--PrimaryColor) !important;
+    transform: translateY(5px);
+  }
+
+  .Footer .secContent .footerCard .footerLinks .linkGroup .footerList {
+    color: var(--textColor) !important;
+  }
+}
+
+/* ================================================== */
+/* MEDIA UNTUK LAPTOP  1200 992 768 576;*/
+/* ================================================== */
+
+@media screen and (min-width: 992px) {
+  .Footer {
+    padding: 2rem 0;
+  }
+
+  .Footer .secContent .footerCard {
+    flex-direction: row;
+  }
+
+  .Footer .secContent .footerCard .footerLinks {
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 3rem;
+    padding-bottom: 0.25rem;
+  }
+
+  .Footer .secContent .contactDiv .inputDiv .btn {
+    width: max-content;
+    padding: 0 2rem;
+    background: var(--gradientBiru) !important;
+  }
+
+  .Footer .secContent .contactDiv .inputDiv .btn:hover {
+    width: max-content;
+    padding: 0 2rem;
+    background: var(--gradientHijau) !important;
+    border: none;
+  }
+
+  .Footer .secContent .footerCard .footerIntro .footerSocials {
+    column-gap: 0.5rem;
+  }
+
+  .Footer .secContent .footerCard .footerIntro .footerSocials .icon {
+    color: var(--textColor) !important;
+    font-size: 25px;
+  }
+
+  .Footer .secContent .footerCard .footerIntro .footerSocials .icon:hover {
+    color: var(--PrimaryColor) !important;
+    transform: translateY(5px);
+  }
+
+  .Footer .secContent .footerCard .footerLinks .linkGroup .footerList {
+    color: var(--textColor) !important;
+  }
+}
+
+/* ================================================== */
+/* MEDIA UNTUK LAPTOP  1200 992 768 576;*/
+/* ================================================== */
+
+@media screen and (min-width: 1200px) {
+  .Footer .secContent .footerCard {
+    flex-direction: row;
+  }
+
+  .Footer .secContent .footerCard .footerLinks {
+    padding-bottom: 2rem;
+  }
+  .Footer .secContent .footerCard .footerIntro .footerParagraph {
+    font-size: 15px;
+    color: var(--textColor) !important;
+  }
+
+  .Footer .secContent .footerCard .footerIntro .footerSocials {
+    column-gap: 0.5rem;
+  }
+
+  .Footer .secContent .footerCard .footerIntro .footerSocials .icon {
+    color: var(--textColor) !important;
+    font-size: 25px;
+  }
+
+  .Footer .secContent .footerCard .footerIntro .footerSocials .icon:hover {
+    color: var(--PrimaryColor) !important;
+    transform: translateY(5px);
+  }
+
+  .Footer .secContent .footerCard .footerLinks .linkGroup .footerList {
+    color: var(--textColor) !important;
+  }
 }

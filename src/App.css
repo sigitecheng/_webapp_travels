@@ -91,5 +91,29 @@ input {
 }
 
 body {
-  background: var(--whiteColor);
+  background: var(--bodyColor) !important;
+}
+
+/* ====================================== */
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 80% !important;
+    margin: auto !important;
+  }
+
+  .section {
+    padding: 6rem 0 4rem;
+  }
+}
+
+/* ====================================== */
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 80% !important;
+    margin: auto !important;
+  }
+
+  .section {
+    padding: 6rem 0 4rem;
+  }
 }

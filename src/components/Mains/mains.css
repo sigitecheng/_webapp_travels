@@ -10,6 +10,9 @@
   --inputColor: rgb(239, 239, 239);
   --bodyColor: rgb(240, 240, 246);
   --cardBG: rgb(225, 225, 235);
+  --red: rgb(200, 0, 0);
+  --gradientBiru: linear-gradient(to right, #66ccff, #003366);
+  --gradientHijau: linear-gradient(to right, #006600, #66ff99);
 }
 
 .Mains {
@@ -163,4 +166,76 @@
   margin-top: auto;
   align-self: center;
   font-size: 18px;
+}
+
+/* ================================================== */
+/* MEDIA UNTUK LAPTOP  1200 992 768 576;*/
+/* ================================================== */
+
+@media screen and (max-width: 576px){
+.Mains .secContent .singleDestination .cardInfo .btn {
+  background: var(--gradientBiru)!important;
+  font-weight: 600;
+}
+
+.Mains .secContent .singleDestination .cardInfo .btn:hover {
+  background: var(--gradientHijau)!important;
+  border: none;
+}
+}
+
+
+@media screen and (min-width: 576px) {
+  .Mains .secTitle .title {
+    font-size: 1.5rem;
+  }
+
+  .Mains .secTitle .title::after {
+    width: 155px; !important;
+  }
+
+  .Mains .secContent {
+  grid-template-columns: repeat(2, 1fr);
+  }
+
+  .Mains .secContent .singleDestination {
+  height: auto;
+  }
+
+  
+.Mains .secContent .singleDestination .cardInfo .btn {
+  background: var(--gradientBiru)!important;
+  font-weight: 600;
+}
+
+.Mains .secContent .singleDestination .cardInfo .btn:hover {
+  background: var(--gradientHijau)!important;
+  border: none;
+}
+
+}
+
+
+/* ================================================== */
+/* MEDIA UNTUK LAPTOP  1200 992 768 576;*/
+/* ================================================== */
+
+@media screen and (min-width: 992px) {
+  .Mains .secContent {
+  grid-template-columns: repeat(3, 1fr);
+  }
+
+  .Mains .secContent .singleDestination {
+  height: auto;
+  }
+
+.Mains .secContent .singleDestination .cardInfo .btn {
+  background: var(--gradientBiru)!important;
+  font-weight: 600;
+}
+
+.Mains .secContent .singleDestination .cardInfo .btn:hover {
+  background: var(--gradientHijau)!important;
+  border: none;
+}
 }
