@@ -1,7 +1,7 @@
 import {useEffect} from 'react'
 
 import './home.css'
-import video from '../../assets/img/water1.mp4'
+import video from '../../assets/img/sky1.mp4'
 
 // import icon
 import {GrLocation} from 'react-icons/gr'

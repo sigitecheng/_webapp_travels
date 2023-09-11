@@ -14,7 +14,7 @@ import {FiChevronRight } from 'react-icons/fi'
 import './footer.css'
 
 // import video untuk halaman footer  
-import video2 from '../../assets/img/water2.mp4'
+import video2 from '../../assets/img/sky2.mp4'
 
 // import aos 
 import Aos from 'aos'
