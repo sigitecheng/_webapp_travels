@@ -61,8 +61,7 @@ export default function Footer(){
                             </div>
 
                             <div data-aos="fade-up" className="footerParagraph">
-                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla natus minima ab. Architecto, minus id?
-                            </div>
+                            Travel Company is a source of enduring excellence in creating unforgettable travel experiences. We are dedicated to providing unparalleled tourism services, connecting clients with amazing destinations, and offering the best travel solutions.</div>
                             <div data-aos="fade-up" data-aos-duration="6000" className="footerSocials">
                                 <RxTwitterLogo className='icon' />
                                 <FiInstagram className='icon' />
@@ -178,8 +177,8 @@ export default function Footer(){
                         </div>
 
                         <div className="footerDiv flex">
-                            <small>Best Travel Website Theme</small>
-                            <small>Copyright Reserved- Designed by <a href="">Sigimatika</a></small>
+                            <small>PT. Travel Mitra Jaya Wisata </small>
+                            <small>Copyright© Reserved-Designed by <a href="">Sigimatika</a></small>
                         </div>
                     </div>
 
